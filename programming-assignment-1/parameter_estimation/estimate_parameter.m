@@ -5,6 +5,8 @@ clear; close all; clc
 fprintf('Loading the dataset ............... \n');
 load('../PA1_data/Problem1_data/data.mat')
 
+x = [2:500];
+
 sum_ml = zeros(499,1);
 sum_map = zeros(499,1);
 sum_bayesian = zeros(499,1);
@@ -22,9 +24,14 @@ sum_map = sum_map / 100;
 sum_bayesian = sum_bayesian / 100;
 
 figure();
-scatter(sum_ml,sum_map);
+plot(x,d_ml,'color','k');
+hold on;
+plot(x,d_map,'color','b');
+hold off;
 figure();
-scatter(sum_map,sum_bayesian);
+plot(x,d_map,'color','k');
+hold on;
+plot(x,d_bayesian,'color','b');
 
 sum_ml = zeros(499,1);
 sum_map = zeros(499,1);
@@ -42,7 +49,14 @@ sum_ml = sum_ml/100;
 sum_map = sum_map / 100;
 sum_bayesian = sum_bayesian / 100;
 
+
+
 figure();
-scatter(sum_ml,sum_map);
+plot(x,d_ml,'color','k');
+hold on;
+plot(x,d_map,'color','b');
+hold off;
 figure();
-scatter(sum_map,sum_bayesian);
+plot(x,d_map,'color','k');
+hold on;
+plot(x,d_bayesian,'color','b');
