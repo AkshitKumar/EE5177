@@ -1,7 +1,7 @@
 % Programming Assignment - Question 2
 
 % Initialization
-clear; close all; 
+clear; close all; clc;
 fprintf('Loading the data set..................\n');
 
 % Getting the directories for loading the data
@@ -66,7 +66,7 @@ for i = 1:length(face_data_points)
     
     % Calculate the Eigen Vectors for face and non face data sets
     [U_face,S_face] = pca(face_train_data_sub);
-    [U_non_face,S_non_face] = pca(non_face_train_data_sub);
+    % [U_non_face,S_non_face] = pca(non_face_train_data_sub);
     
     % Projecting the data to plane of highest variance 
     Z_face_train = projectData(face_train_data_sub,U_face,140);
@@ -106,3 +106,11 @@ Z_non_face_test = projectData(non_face_test_data,U_non_face,140);
 [mu_non_face,Sigma_non_face] = learnMLParameters(Z_non_face_train);
 
 [face_model_on_faces,non_face_model_on_faces,face_model_on_non_faces,non_face_model_on_non_faces] = plotLikelihood(mu_face,Sigma_face,mu_non_face,Sigma_non_face,Z_face_test,Z_non_face_test);
+
+[tpr,fpr] = plotROC(-40,5,50,mu_face,Sigma_face,Z_face_test,Z_non_face_test,1);
+[tpr2,fpr2] = plotROC(-100,5,50,mu_non_face,Sigma_non_face,Z_face_test,Z_non_face_test,2);
+
+
+
+
+

@@ -1,0 +1,212 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Machine Learning for Computer Vision (EE5177)
+\end_layout
+
+\begin_layout Title
+Programming Assignment 1 : Fitting Probability DIstribution to Data
+\end_layout
+
+\begin_layout Title
+Problem 1
+\end_layout
+
+\begin_layout Author
+Akshit Kumar (
+\emph on
+EE14B127
+\emph default
+)
+\end_layout
+
+\begin_layout Date
+5th February 2017
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Calculation of ML, MAP and Bayesian Estimate
+\end_layout
+
+\begin_layout Subsection
+Goal
+\end_layout
+
+\begin_layout Standard
+We are given a set 
+\begin_inset Formula $X$
+\end_inset
+
+ of 
+\begin_inset Formula $D$
+\end_inset
+
+-dimensional data points generated using a Gaussian distribution of mean
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and covariance matrix 
+\begin_inset Formula $\sum$
+\end_inset
+
+.
+ We are also given the distribution of prior on the mean to be a Gaussian
+ with 
+\begin_inset Formula $P(\mu)=N_{\mu}(\mu_{o},\Sigma_{o})$
+\end_inset
+
+.
+ Given the covariance, we are required to calculate the ML estimate of mean,
+ MAP estimate of mean and posterior distribution using Bayesian Methods.
+\end_layout
+
+\begin_layout Subsection
+Calculation of ML Estimate of mean
+\end_layout
+
+\begin_layout Standard
+The Multivariate Gaussian Distribution is defined as : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(x|\mu,\sum)=\dfrac{exp\{\dfrac{-1}{2}(x-\mu)^{T}\Sigma^{-1}(x-\mu)\}}{\sqrt{|2\pi\sum|}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Given a set of i.i.d data 
+\begin_inset Formula $X=\{x_{1},x_{2},x_{3},............................,x_{N}\}$
+\end_inset
+
+ drawn from 
+\begin_inset Formula $N(x;\mu,\sum)$
+\end_inset
+
+, we can estimate 
+\begin_inset Formula $(\mu,\sum)$
+\end_inset
+
+ by Maximum Likelihood Estimation.
+ The loglikelihood function is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L=ln(p(x|\mu,\sum)=\dfrac{-N}{2}ln|\sum|-\dfrac{1}{2}{\textstyle (x_{n}-\mu)^{T}\sum^{-1}(x_{n}-\mu)}+const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+On taking derivative with respect to 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dfrac{dL}{d\mu}=\dfrac{-1}{2}Summation(\dfrac{d(x_{n}-\mu)^{T}\sum^{-1}(x_{n}-\mu)}{d\mu})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dfrac{dL}{d\mu}=\dfrac{-1}{2}(Summation(-2\sum^{-1}(x_{n}-\mu)))=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu_{ML}=\dfrac{1}{N}Summation(x_{n})$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
