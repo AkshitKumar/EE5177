@@ -9,4 +9,7 @@ function plotClassificationAccuracy(confusion_matrix)
     f1_score = (tp + tn) ./ (tp + tn + fn + fp);
     points = [1:size(confusion_matrix,1)];
     plot(points,f1_score,'color','r');
+    title('Classification Accuracy Plot');
+    xlabel('Training Model #');
+    ylabel('Classification Accuracy');
 end

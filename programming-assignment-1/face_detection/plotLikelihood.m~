@@ -19,18 +19,13 @@ function [face_model_on_faces,non_face_model_on_faces,face_model_on_non_faces,no
     figure();
     plot(points,face_model_on_faces,points,non_face_model_on_faces);
     title('Loglikelihood plot for faces test set');
-    xlabel('Data Points');
-    ylabel('Loglikelihood value');
-    legend('Loglikelihood value for face model','Loglikelihood value for non face model');
+    xlabel('
     
     points = 1:size(non_face_test_data,1);
     figure();
-    plot(points,face_model_on_non_faces,points,non_face_model_on_non_faces);
-    title('Loglikelihood plot for non faces test set');
-    xlabel('Data Points');
-    ylabel('Loglikelihood value');
-    legend('Loglikelihood value for face model','Loglikelihood value for non face model');
-    
+    plot(points,face_model_on_non_faces,);
+    hold on;
+    plot(points,non_face_model_on_non_faces,'color','b');
 end
     
     

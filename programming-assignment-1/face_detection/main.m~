@@ -1,6 +1,6 @@
 % Programming Assignment - Question 2
 
-% Initialization setp
+% Initialization
 clear; close all; clc;
 fprintf('Loading the data set..................\n');
 
@@ -90,8 +90,7 @@ fprintf('Plotting the confusion matrix................\n');
 plotClassificationAccuracy(confusion_matrix);
 
 % Get the loglikelihood score for faces and non faces
-% By observing the classification accuracy, we find that model on 600 face
-% training set and 400 non face training set does the best
+
 face_train_data_sub = face_train_data(1:600,:);
 non_face_train_data_sub = non_face_train_data(1:400,:);
 
@@ -112,10 +111,10 @@ Z_non_face_test = projectData(non_face_test_data,U_non_face,140);
 [tpr2,fpr2] = plotROC(-100,1,100,mu_non_face,Sigma_non_face,Z_face_test,Z_non_face_test,2);
 
 threshold_faces = -50 + find(fpr <= 0.2,1);
-threshold_non_faces = -100 + find(fpr2 <= 0.2,1);
+threshold_non_faces = -100 + find(fpr <= 0.2,1);
 
 fprintf('Threshold for Faces is : %d\n',threshold_faces);
-fprintf('Threshold for Non faces is : %d \n',threshold_non_faces);
+fprintf('Threshold for Non faces is : %d \n, thr
 
 
 

@@ -19,16 +19,11 @@ function [tpr,fpr] =  plotROC(threshold_start,threshold_step,threshold_finish,mu
             tpr = [tpr; tp/size(face_test,1)];
             fpr = [fpr; fp/size(non_face_test,1)];
         end
-        x = linspace(0,1);
         figure();
+        plot(fpr,tpr);
         title('ROC Plot for Faces-Model');
         xlabel('True Positive Rate (TPR)');
         ylabel('False Positive Rate (FPR)');
-        scatter(fpr,tpr);
-        hold on;
-        plot(fpr,tpr);
-        hold on;
-        plot(x,x);
     end
     
     if model_no == 2
@@ -53,14 +48,12 @@ function [tpr,fpr] =  plotROC(threshold_start,threshold_step,threshold_finish,mu
         end
         x = linspace(0,1);
         figure();
+        
+        plot(fpr,tpr,x,x);
         title('ROC Plot for Non-faces Model');
         xlabel('True Positive Rate (TPR)');
         ylabel('False Positive Rate (FPR)');
-        scatter(fpr,tpr);
-        hold on;
-        plot(fpr,tpr);
-        hold on;
-        plot(x,x);
+        legend('ROC for Non-face Model', 'ROC for random model');
     end
 end
         
