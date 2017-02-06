@@ -101,7 +101,34 @@ $$ \mu_{n} = \Sigma_{o}(\Sigma_{o} + \dfrac{1}{n}\Sigma)^{-1}\mu_{n}^{*} + \dfra
 $$ \Sigma_{n} = \Sigma_{o}(\Sigma_{o} + \dfrac{1}{n}\Sigma)^{-1}\dfrac{1}{n}\Sigma $$
 Observe that $x$ can be viewed as the sum of two mutually independent random variables, a random vector $\mu$with $p(\mu|D) = N(\mu_{n},\Sigma_{n})$ and an independent random vector $y$ with $p(y) = N(0,\Sigma)$. Since the sum of two independent, normally distributed random vectors is again a normally distributed vector whose mean is the sum of the means and whose covariance matrix is the sum of covariance matrices. we have $$p(x|D) = N(\mu_{n},\Sigma + \Sigma_{n})$$
 
+\section{Plots of Bhattacharya Distance of ML,MAP and Bayesian}
+\subsection{Goal}
+The estimates derived using Maximum Likelihood, Maximum A Posteriori and Bayesian Methods can be analysed quantitatively using the Bhattacharya distance as a distance metric between the ground truth values and the estimated values.
+
+\subsection{Plot of ML and MAP for Prior-1}
+\includegraphics[scale=0.8]{plot1}
 
 
+\subsection{Plot of MAP and Bayesian for Prior-1}
+\includegraphics[scale=0.8]{plot2}
+
+
+\subsection{Plot of ML and MAP for Prior-2}
+\includegraphics[scale=0.8]{plot3}
+
+\subsection{Plot of MAP and Bayesian for Prior-2}
+\includegraphics[scale=0.8]{plot4}
+
+\section{Inferences}
+\subsection{Comparison of ML and MAP estimate from $d$ vs. $n$ plots}
+From the $d$ vs. $n$ plot for Prior-1 shows that initially ML estimate is worse compared to MAP estimate but as n increases, the ML estimate converges to the MAP estimate,performing as well as MAP estimate as n increases(goes to 500).Since the MAP estimate is so low to start with, it implies that Prior-1 is close to the true prior.\newline
+From the $d$ vs. $n$ plot for Prior-2 shows that initially ML estimate is worse compared to MAP estimate, for some 20 odd iterations and then after that quickly converges to the true value, performing better than the MAP estimate. The plot shows that MAP estimate will require a lot data to converge to the true values of the mean and covariance.
+
+\subsection{Comparison of MAP and Bayesian estimate from $d$ vs. $n$ plots}
+From both the plots, the MAP and the Bayesian estimates seem to be performing the same as the plot for MAP and Bayesian overlap with each other. 
+\newline
+For prior-1, MAP and Bayesian estimates both increase initially and start decreasing after some 50 odd points. 
+\newline
+For prior-2, MAP and Bayesian estimates continuously decrease as n increases but lot of data points to converge to the true values.
 
 \end{document}

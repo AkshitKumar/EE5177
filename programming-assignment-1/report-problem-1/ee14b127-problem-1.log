@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.3)  5 FEB 2017 04:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.3)  7 FEB 2017 02:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,36 +299,62 @@ e
 
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-ee14b127-problem-1.aux) ) 
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <plot1.
+png, id=21, 562.1pt x 421.575pt>
+File: plot1.png Graphic file (type png)
+ <use plot1.png>
+Package pdftex.def Info: plot1.png used on input line 109.
+(pdftex.def)             Requested size: 449.68062pt x 337.26045pt.
+
+[2] <plot2.png, id=25, 562.1pt x 421.575pt>
+File: plot2.png Graphic file (type png)
+ <use plot2.png>
+Package pdftex.def Info: plot2.png used on input line 113.
+(pdftex.def)             Requested size: 449.68062pt x 337.26045pt.
+
+<plot3.png, id=26, 562.1pt x 421.575pt>
+File: plot3.png Graphic file (type png)
+ <use plot3.png>
+Package pdftex.def Info: plot3.png used on input line 117.
+(pdftex.def)             Requested size: 449.68062pt x 337.26045pt.
+ [3 <./plot1.png (PNG copy)> <./plot2.png (PNG copy)>] <plot4.png, id=30, 562.1
+pt x 421.575pt>
+File: plot4.png Graphic file (type png)
+
+<use plot4.png>
+Package pdftex.def Info: plot4.png used on input line 120.
+(pdftex.def)             Requested size: 449.68062pt x 337.26045pt.
+ [4 <./plot3.png (PNG copy)> <./plot4.png (PNG copy)>] [5]
+(./ee14b127-problem-1.aux) ) 
 Here is how much of TeX's memory you used:
- 3389 strings out of 493014
- 44968 string characters out of 6133351
- 123452 words of memory out of 5000000
- 6875 multiletter control sequences out of 15000+600000
+ 3410 strings out of 493014
+ 45228 string characters out of 6133351
+ 124452 words of memory out of 5000000
+ 6891 multiletter control sequences out of 15000+600000
  14264 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,6n,23p,496b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm
--super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx
-1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx12
-00.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on ee14b127-problem-1.pdf (2 pages, 205910 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips
+/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
+bx1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx
+1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx14
+40.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on ee14b127-problem-1.pdf (5 pages, 285523 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

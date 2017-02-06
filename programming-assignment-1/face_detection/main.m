@@ -107,8 +107,8 @@ Z_non_face_test = projectData(non_face_test_data,U_non_face,140);
 
 [face_model_on_faces,non_face_model_on_faces,face_model_on_non_faces,non_face_model_on_non_faces] = plotLikelihood(mu_face,Sigma_face,mu_non_face,Sigma_non_face,Z_face_test,Z_non_face_test);
 
-[tpr,fpr] = plotROC(-40,5,50,mu_face,Sigma_face,Z_face_test,Z_non_face_test,1);
-[tpr2,fpr2] = plotROC(-100,5,50,mu_non_face,Sigma_non_face,Z_face_test,Z_non_face_test,2);
+[tpr,fpr] = plotROC(-50,1,50,mu_face,Sigma_face,Z_face_test,Z_non_face_test,1);
+[tpr2,fpr2] = plotROC(-100,1,100,mu_non_face,Sigma_non_face,Z_face_test,Z_non_face_test,2);
 
 
 
