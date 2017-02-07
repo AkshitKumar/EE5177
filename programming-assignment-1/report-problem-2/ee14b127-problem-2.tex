@@ -34,6 +34,15 @@
 \tableofcontents{}
 
 \section{Problem}
+We are given a data set consisting of face and non-face images. The task is to classify a new image as a face or a non face.
+\subsection{Goal}
+For a given test data, we are required to classify the test data to belong to either a face class or a non face class.
+\subsection{Challenges}
+Learning a model and doing classification on all 784 dimensions (28x28 greyscale images) is computationally expensive.
+\subsection{Approach}
+To classify a test data to either class of faces or non faces, we make use of Generative Classification Technique by learning the class conditional probability distributions for the face class and non face class. We train the data to fit Multivariate Normal Distribution for face and non face models using Maximum Likelihood Estimation. Depending on which model gives a better loglikelihood score, we classify the test data into the respective class.
+\newline 
+To handle the computational infeasibility, we use Principal Component Analysis (PCA) for dimensionality reduction to say some $K$ dimensions ($K$ < 784). 
 
 
 

@@ -22,8 +22,8 @@ function [tpr,fpr] =  plotROC(threshold_start,threshold_step,threshold_finish,mu
         figure();
         plot(fpr,tpr);
         title('ROC Plot for Faces-Model');
-        xlabel('True Positive Rate (TPR)');
-        ylabel('False Positive Rate (FPR)');
+        ylabel('True Positive Rate (TPR)');
+        xlabel('False Positive Rate (FPR)');
     end
     
     if model_no == 2
@@ -51,8 +51,8 @@ function [tpr,fpr] =  plotROC(threshold_start,threshold_step,threshold_finish,mu
         
         plot(fpr,tpr,x,x);
         title('ROC Plot for Non-faces Model');
-        xlabel('True Positive Rate (TPR)');
-        ylabel('False Positive Rate (FPR)');
+        ylabel('True Positive Rate (TPR)');
+        xlabel('False Positive Rate (FPR)');
         legend('ROC for Non-face Model', 'ROC for random model');
     end
 end
