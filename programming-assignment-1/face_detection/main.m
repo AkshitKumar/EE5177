@@ -55,7 +55,7 @@ for i = 3:length(non_face_test_dir)
 end
 
 face_data_points = [150,150,200,250,300,300,400,400,600];
-non_face_data_points = [150,200,200,200,200,300,300,300,400];
+non_face_data_points = [150,200,200,200,200,300,300,400,400];
 
 confusion_matrix = [];
 
@@ -92,7 +92,7 @@ plotClassificationAccuracy(confusion_matrix);
 % Get the loglikelihood score for faces and non faces
 % By observing the classification accuracy, we find that model on 600 face
 % training set and 400 non face training set does the best
-face_train_data_sub = face_train_data(1:600,:);
+face_train_data_sub = face_train_data(1:400,:);
 non_face_train_data_sub = non_face_train_data(1:400,:);
 
 [U_face,S_face] = pca(face_train_data_sub);

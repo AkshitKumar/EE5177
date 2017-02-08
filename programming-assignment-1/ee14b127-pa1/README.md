@@ -1,4 +1,5 @@
 # Machine Learning for Computer Vision : EE5177
+Important Note : Include the folder PA1_data in the folder ee14b127-pa1 to run the scripts
 ## Problem 1 - parameter_estimation
 This folder contains the MATLAB scripts for solving the first problem of the programming assignment. The MATLAB files included are:
 + estimate_parameter : The main file which needs to be run for all the calculations and plot generations
@@ -29,7 +30,7 @@ This folder contains the MATLAB scripts for solving the second problem of the pr
 + plotROC : Helper function to plot the ROC curve for face and non face models
 
 ## Usage 
-For running the required script for problem 1, do the following in the MATLAB command window :
+For running the required script for problem 2, do the following in the MATLAB command window :
 ```sh
 >> cd <path to folder>/ee14b127-pa1/face_detection/
 >> run main.m

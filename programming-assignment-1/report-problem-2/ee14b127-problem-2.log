@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.3)  8 FEB 2017 02:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.3)  8 FEB 2017 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -614,50 +614,11 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-ABD: EveryShipout initializing macros (./ee14b127-problem-2.toc
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 ...erline {2.4}Threshold for FPR \leq 0.2}{4}
-                                                  
-? R
-OK, entering \nonstopmode...
-! Extra }, or forgotten $.
-\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
-                                                  \nobreak \leaders \hbox {$...
-l.14 ...erline {2.4}Threshold for FPR \leq 0.2}{4}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 ...erline {2.4}Threshold for FPR \leq 0.2}{4}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-)
+ABD: EveryShipout initializing macros (./ee14b127-problem-2.toc)
 \tf@toc=\write4
 \openout4 = `ee14b127-problem-2.toc'.
 
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.52 \tableofcontents
-                     {}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[1
+ [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 74--76
@@ -672,9 +633,8 @@ Type  H <return>  for immediate help.
                                                   
 l.83 \end{tabularx}
                    
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? R'
+OK, entering \nonstopmode...
 ! Package array Error:  Illegal pream-token (g): `c' used.
 
 See the array package documentation for explanation.
@@ -784,75 +744,195 @@ Underfull \hbox (badness 10000) in alignment at lines 83--83
 [][][][][][][][][]
  []
 
-<plot_classification_accuracy.png, id=20, 562.1pt x 421.575pt>
+! Package array Error:  Illegal pream-token (&): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Package array Error:  Illegal pream-token (g): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Package array Error:  Illegal pream-token (t): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Package array Error:  Illegal pream-token (;): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Package array Error:  Illegal pream-token (\bfseries): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (&): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (g): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (t): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (;): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (\bfseries): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \end{tabularx}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 101--101
+[][][][][][][][][]
+ []
+
+<plot_classification_accuracy.png, id=19, 562.1pt x 421.575pt>
 File: plot_classification_accuracy.png Graphic file (type png)
 
 <use plot_classification_accuracy.png>
-Package pdftex.def Info: plot_classification_accuracy.png used on input line 85
-.
+Package pdftex.def Info: plot_classification_accuracy.png used on input line 10
+3.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-<plot_loglikelihood_face.png, id=21, 562.1pt x 421.575pt>
+<plot_loglikelihood_face.png, id=20, 562.1pt x 421.575pt>
 File: plot_loglikelihood_face.png Graphic file (type png)
 
 <use plot_loglikelihood_face.png>
-Package pdftex.def Info: plot_loglikelihood_face.png used on input line 94.
+Package pdftex.def Info: plot_loglikelihood_face.png used on input line 112.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--98
+Underfull \hbox (badness 10000) in paragraph at lines 110--116
 
  []
 
-[2 <./plot_classification_accuracy.png (PNG copy)> <./plot_loglikelihood_face.p
-ng (PNG copy)>] <plot_loglikelihood_non_face.png, id=25, 562.1pt x 421.575pt>
+[2 <./plot_classification_accuracy.png (PNG copy)>]
+<plot_loglikelihood_non_face.png, id=25, 562.1pt x 421.575pt>
 File: plot_loglikelihood_non_face.png Graphic file (type png)
 
 <use plot_loglikelihood_non_face.png>
-Package pdftex.def Info: plot_loglikelihood_non_face.png used on input line 101
+Package pdftex.def Info: plot_loglikelihood_non_face.png used on input line 119
 .
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
 
 <plot_roc_face.png, id=26, 562.1pt x 421.575pt>
 File: plot_roc_face.png Graphic file (type png)
  <use plot_roc_face.png>
-Package pdftex.def Info: plot_roc_face.png used on input line 109.
+Package pdftex.def Info: plot_roc_face.png used on input line 127.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
 
-<plot_roc_non_face.png, id=27, 562.1pt x 421.575pt>
+[3 <./plot_loglikelihood_face.png (PNG copy)> <./plot_loglikelihood_non_face.pn
+g (PNG copy)>] <plot_roc_non_face.png, id=30, 562.1pt x 421.575pt>
 File: plot_roc_non_face.png Graphic file (type png)
 
 <use plot_roc_non_face.png>
-Package pdftex.def Info: plot_roc_non_face.png used on input line 111.
+Package pdftex.def Info: plot_roc_non_face.png used on input line 129.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
- [3 <./plot_loglikelihood_non_face.png (PNG copy)> <./plot_roc_face.png (PNG co
-py)>] [4 <./plot_roc_non_face.png (PNG copy)>]
-(./ee14b127-problem-2.aux) ) 
+ [4 <./plot_roc_face.png (PNG copy)> <./plot_roc_non_face.png (PNG copy)>] (./e
+e14b127-problem-2.aux) ) 
 Here is how much of TeX's memory you used:
  13451 strings out of 493014
  259829 string characters out of 6133351
- 313864 words of memory out of 5000000
+ 316865 words of memory out of 5000000
  16704 multiletter control sequences out of 15000+600000
  14264 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,54p,657b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips
-/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm
--super/sfbx1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-sup
-er/sfbx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super
-/sfrm1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
-frm1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
-m1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1
-000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti120
-0.pfb>
-Output written on ee14b127-problem-2.pdf (4 pages, 286874 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-
+super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-sup
+er/sfbx1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super
+/sfbx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
+fbx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
+m1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1
+200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm172
+8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1000.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pf
+b>
+Output written on ee14b127-problem-2.pdf (4 pages, 286816 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream

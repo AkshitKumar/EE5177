@@ -82,11 +82,29 @@ Non Faces & False Positive ($fp$) & True Negative ($tn$) \cellcolor[gray]{.8} \\
 \hhline{~---}
 \end{tabularx}
 $$
+\newline
+Tabulation of the confusion matrix is as follows :
+$$
+\begin{tabularx}{.7\textwidth}{&gt;{\bfseries}c|c c c |}
+ (Faces,Non-Faces) & $tp$ & $fn$ & $fp$ & $tn$ & $A$ \\
+\hhline{------}
+(150,150) &  493 & 7 & 174 & 221 & 0.7977  \\
+(150,200) &  444 & 56 & 23 & 372 & 0.9117  \\
+(200,200) &  497 & 3 & 177 & 218 & 0.7988  \\
+(250,200) &  500 & 0 & 215 & 180 & 0.7597  \\
+(300,200) &  499 & 1 & 288 & 167 & 0.7441  \\
+(300,300) &  492 & 8 & 26 & 369 & 0.9620  \\
+(400,300) &  493 & 7 & 40 & 355 & 0.9474  \\
+(400,400) &  493 & 7 & 40 & 355 & 0.9821  \\
+(600,400) &  489 & 11 & 11 & 384 & 0.9754  \\
+\hhline{------}
+\end{tabularx}
+$$
 \includegraphics[scale=0.6]{plot_classification_accuracy}
 \newline
-From this plot we see that the last model (\# of faces = 600 and \# of non faces = 400) gives the best classification accuracy amongst all the models.
+From this plot we see that the second last model (\# of faces = 400 and \# of non faces = 400) gives the best classification accuracy amongst all the models.
 \subsection{Visualization of Loglikelihood Scores}
-Given that the best model according to the classication accuracy plot is model \#9. We visualise the loglikehood scores given by this model for faces and non faces data set.
+Given that the best model according to the classication accuracy plot is model \#8. We visualise the loglikehood scores given by this model for faces and non faces data set.
 \newline
 \subsubsection{Loglikelihood Scores On Faces Test Set}
 For the model learnt on the training set of faces and non-faces and then tested on face test sets, gives the following plot for loglikelihood scores.
@@ -110,7 +128,7 @@ $$ FPR = \dfrac{fp}{fp + tn} $$
 \subsubsection{ROC curve usinf non face model as predictor}
 \includegraphics[scale=0.6]{plot_roc_non_face}
 \subsection{Threshold for FPR $\leq$ 0.2}
-We find that the loglikelihood score threshold for the faces model is 40 and for the non faces model is 24 such that FPR $\leq$ 0.2
+We find that the loglikelihood score threshold for the faces model is 38 and for the non faces model is 24 such that FPR $\leq$ 0.2
 \section{Inferences}
 \subsection{Suitable model for classification task}
 By performing this experiment, we realise that using the faces model is better suited than using the non faces model for classification tasks because the ROC curve for faces model is always above the ROC curve for non-faces model. Also we notice that the ROC curve for the non-faces model is below the $y=x$ line which is essentially the ROC curve we get by randomly classifying the images as either face or non face. Hence the non-face model performs worse than a random classifier.
