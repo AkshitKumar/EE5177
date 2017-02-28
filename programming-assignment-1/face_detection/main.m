@@ -64,6 +64,8 @@ for i = 1:length(face_data_points)
     face_train_data_sub = face_train_data(1:face_data_points(i),:);
     non_face_train_data_sub = non_face_train_data(1:non_face_data_points(i),:);
     
+    %face_train_data_sub = featureNormalize(face_train_data_sub);
+    
     % Calculate the Eigen Vectors for face and non face data sets
     [U_face,S_face] = pca(face_train_data_sub);
     % [U_non_face,S_non_face] = pca(non_face_train_data_sub);
