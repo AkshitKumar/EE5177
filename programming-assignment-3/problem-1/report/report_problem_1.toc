@@ -1,0 +1,45 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Goal}{2}
+\contentsline {subsection}{\numberline {1.2}Approach}{2}
+\contentsline {subsection}{\numberline {1.3}Results}{2}
+\contentsline {section}{\numberline {2}Data Generation}{2}
+\contentsline {subsection}{\numberline {2.1}Plot of $x$ vs. $y$ (Ground Truth Data)}{2}
+\contentsline {subsection}{\numberline {2.2}Plot of $x$ vs. $w$}{3}
+\contentsline {subsection}{\numberline {2.3}Rational for using non linear regression}{3}
+\contentsline {section}{\numberline {3}Non Linear Regression using Radial Basis Function (Gaussian)}{3}
+\contentsline {subsection}{\numberline {3.1}Transformation Equation}{3}
+\contentsline {subsection}{\numberline {3.2}Choice of $\alpha $'s}{3}
+\contentsline {subsection}{\numberline {3.3}Choice of $\lambda $}{3}
+\contentsline {subsection}{\numberline {3.4}Weight Estimation using MLE}{3}
+\contentsline {subsection}{\numberline {3.5}World State Estimation (using $\lambda $ = 1)}{4}
+\contentsline {subsubsection}{\numberline {3.5.1}Plot of the Predicted World State vs Data}{4}
+\contentsline {subsubsection}{\numberline {3.5.2}Prediction and Fitting Error}{4}
+\contentsline {subsection}{\numberline {3.6}Error Analysis}{4}
+\contentsline {subsubsection}{\numberline {3.6.1}Prediction Error}{4}
+\contentsline {subsubsection}{\numberline {3.6.2}Fitting Error}{4}
+\contentsline {subsection}{\numberline {3.7}Varying $\lambda $}{4}
+\contentsline {subsubsection}{\numberline {3.7.1}Plot of Prediction Error}{4}
+\contentsline {subsubsection}{\numberline {3.7.2}Plot of Fitting Error}{5}
+\contentsline {subsubsection}{\numberline {3.7.3}Results}{5}
+\contentsline {subsubsection}{\numberline {3.7.4}Explanation}{5}
+\contentsline {subsection}{\numberline {3.8}Varying the number of kernels}{5}
+\contentsline {subsubsection}{\numberline {3.8.1}Plot of Prediction Error}{5}
+\contentsline {subsubsection}{\numberline {3.8.2}Optimal number of kernel functions}{5}
+\contentsline {subsubsection}{\numberline {3.8.3}Explanation}{6}
+\contentsline {section}{\numberline {4}Non Linear Regression using Sigmoid function(Arc tangent)}{6}
+\contentsline {subsection}{\numberline {4.1}Transformation Equation}{6}
+\contentsline {subsection}{\numberline {4.2}Choice of $\alpha $'s}{6}
+\contentsline {subsection}{\numberline {4.3}Choice of $\lambda $}{6}
+\contentsline {subsection}{\numberline {4.4}Weight Estimation using MLE}{6}
+\contentsline {subsection}{\numberline {4.5}World State Estimation (using $\lambda $ = 1)}{6}
+\contentsline {subsubsection}{\numberline {4.5.1}Plot of the Predicted World State vs Data}{6}
+\contentsline {subsubsection}{\numberline {4.5.2}Prediction and Fitting Error}{7}
+\contentsline {subsection}{\numberline {4.6}Error Analysis}{7}
+\contentsline {subsubsection}{\numberline {4.6.1}Prediction Error}{7}
+\contentsline {subsubsection}{\numberline {4.6.2}Fitting Error}{7}
+\contentsline {subsection}{\numberline {4.7}Varying $\lambda $}{7}
+\contentsline {subsubsection}{\numberline {4.7.1}Plot of Prediction Error}{7}
+\contentsline {subsubsection}{\numberline {4.7.2}Plot of Fitting Error}{7}
+\contentsline {subsubsection}{\numberline {4.7.3}Results}{8}
+\contentsline {subsubsection}{\numberline {4.7.4}Explanation}{8}
