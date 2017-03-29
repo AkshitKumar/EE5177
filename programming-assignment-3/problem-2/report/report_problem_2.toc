@@ -1,0 +1,33 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Goal}{2}
+\contentsline {subsection}{\numberline {1.2}Approach}{2}
+\contentsline {subsection}{\numberline {1.3}Analysis}{2}
+\contentsline {section}{\numberline {2}Feature Extraction}{2}
+\contentsline {subsection}{\numberline {2.1}Approach}{2}
+\contentsline {subsection}{\numberline {2.2}Sample Cropped Images}{2}
+\contentsline {section}{\numberline {3}Linear Regression using HOG features}{2}
+\contentsline {subsection}{\numberline {3.1}ML Estimate}{2}
+\contentsline {subsection}{\numberline {3.2}Train and Test Error}{2}
+\contentsline {subsection}{\numberline {3.3}Analysis}{2}
+\contentsline {section}{\numberline {4}Dual Regression using HOG features}{3}
+\contentsline {subsection}{\numberline {4.1}ML Estimate}{3}
+\contentsline {subsection}{\numberline {4.2}Train and Test Error}{3}
+\contentsline {subsection}{\numberline {4.3}Analysis}{3}
+\contentsline {section}{\numberline {5}Linear Regression using PCA on HOG features}{3}
+\contentsline {subsection}{\numberline {5.1}Choosing the number of components for PCA}{3}
+\contentsline {subsection}{\numberline {5.2}Appropriate value of number of components for PCA}{3}
+\contentsline {subsection}{\numberline {5.3}Train and Test Error}{3}
+\contentsline {subsection}{\numberline {5.4}Analysis}{3}
+\contentsline {section}{\numberline {6}Dual Regression with Kernel Trick}{4}
+\contentsline {subsection}{\numberline {6.1}RBF Kernel}{4}
+\contentsline {subsection}{\numberline {6.2}Train and Test Error}{4}
+\contentsline {subsubsection}{\numberline {6.2.1}$\lambda _1$ as the minimum pairwise distance}{4}
+\contentsline {subsubsection}{\numberline {6.2.2}$\lambda _2$ as the maximum pairwise distance}{4}
+\contentsline {subsubsection}{\numberline {6.2.3}$\lambda _3$ as the mean of $\lambda _1$ and $\lambda _2$ }{4}
+\contentsline {subsection}{\numberline {6.3}Analysis}{4}
+\contentsline {section}{\numberline {7}Comparison}{4}
+\contentsline {subsection}{\numberline {7.1}Comparison of various models in terms of Train and Test RMSE}{4}
+\contentsline {subsection}{\numberline {7.2}Analysis}{4}
+\contentsline {subsection}{\numberline {7.3}Pan Angles For Images}{4}
+\contentsline {subsection}{\numberline {7.4}Analysis on Sample Test Images}{5}
