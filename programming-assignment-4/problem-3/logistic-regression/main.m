@@ -45,6 +45,7 @@ for i = 1:length(k)
     accuracy = (80 - nnz(y_test - yHat))/80;
     testerr = [testerr ; 1 - accuracy];
 end
+
 figure(1);
 plot(k,cverr);
 figure(2);
