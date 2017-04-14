@@ -15,7 +15,7 @@ insidecity_train = load('../../data/Q2_SVM/insidecity_train.mat');
 insidecity_train = insidecity_train.insidecity_train;
 
 X_train = [coast_train ; forest_train ; mountain_train ; insidecity_train];
-y_train = [zeros(size(coast_train,1),1) ; ones(size(forest_train,1),1) ; 2 * ones(size(mountain_train,1),1) ; 3 * ones(size(insidecity_train,1),1)];
+y_train = [ones(size(coast_train,1),1) ; 2 * ones(size(forest_train,1),1) ; 3 * ones(size(mountain_train,1),1) ; 4 * ones(size(insidecity_train,1),1)];
 
 % Loading the test data
 coast_test = load('../../data/Q2_SVM/coast_test.mat');
@@ -31,21 +31,16 @@ insidecity_test = load('../../data/Q2_SVM/insidecity_test.mat');
 insidecity_test = insidecity_test.insidecity_test;
 
 X_test = [coast_test ; forest_test ; mountain_test ; insidecity_test];
-y_test = [zeros(size(coast_test,1),1) ;  ones(size(forest_test,1),1) ; 2 * ones(size(mountain_test,1),1) ; 3 * ones(size(insidecity_test,1),1)];
+y_test = [ones(size(coast_test,1),1) ;  2 * ones(size(forest_test,1),1) ; 3 * ones(size(mountain_test,1),1) ; 4 * ones(size(insidecity_test,1),1)];
 
-cverr = [];
-testerr = [];
+% Parameter Selection
+%[bestC,bestSigma,bestcv] = parameterSelection(X_train,y_train);
+bestC = 10000000;
+bestSigma = 0.000001;
 
-k = 5:1:15;
-for i = 1:length(k)
-    model = glmnet(X_train,y_train,'multinomial');
-    CVerr = cvglmnet(X_train,y_train,'multinomial',[],[],k(i));
-    cverr = [cverr ; min(CVerr.cvm)];
-    yHat = glmnetPredict(model,X_test,CVerr.lambda_min,'class');
-    accuracy = (80 - nnz(y_test - yHat))/80;
-    testerr = [testerr ; 1 - accuracy];
-end
-figu
-plot(k,cverr);
 
-plot(k,testerr);
+param = ['-s ', num2str(0), ' -t ', num2str(2) , ' -c ', num2str(bestC),' -g ', num2str(bestSigma)];
+
+model = svmtrain(y_train,X_train,'-c 2 -g 0.1');
+[pred,a,decv] = svmpredict(y_test,X_test,model);
+acc = sum(y_test == pred)/length(y_test);
