@@ -34,13 +34,11 @@ X_test = [coast_test ; forest_test ; mountain_test ; insidecity_test];
 y_test = [ones(size(coast_test,1),1) ;  2 * ones(size(forest_test,1),1) ; 3 * ones(size(mountain_test,1),1) ; 4 * ones(size(insidecity_test,1),1)];
 
 % Parameter Selection
-%[bestC,bestSigma,bestcv] = parameterSelection(X_train,y_train);
-bestC = 10000000;
-bestSigma = 0.000001;
+[bestC,bestSigma,bestcv] = parameterSelection(X_train,y_train,10,0);
 
 
-param = ['-s ', num2str(0), ' -t ', num2str(2) , ' -c ', num2str(bestC),' -g ', num2str(bestSigma)];
+param = ['-s ', num2str(0), ' -t ', num2str(0) , ' -c ', num2str(bestC),' -q'];
 
-model = svmtrain(y_train,X_train,'-c 2 -g 0.1');
+model = svmtrain(y_train,X_train,param);
 [pred,a,decv] = svmpredict(y_test,X_test,model);
 acc = sum(y_test == pred)/length(y_test);
