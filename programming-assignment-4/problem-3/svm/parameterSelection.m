@@ -18,7 +18,7 @@ function [bestC,bestSigma,bestcv] = parameterSelection(X_train,y_train,numFolds,
     % Parameter Selection for RBF Kernel
     if kernel_type == 2
         C = logspace(-10,1,10);
-        Sigma = logspace(-10,-8,10);
+        Sigma = logspace(-10,1,10);
         bestcv = 0;
         for c = 1:length(C)
             for s = 1:length(Sigma)
