@@ -33,15 +33,6 @@ insidecity_test = insidecity_test.insidecity_test;
 X_test = [coast_test ; forest_test ; mountain_test ; insidecity_test];
 y_test = [ones(size(coast_test,1),1) ;  2 * ones(size(forest_test,1),1) ; 3 * ones(size(mountain_test,1),1) ; 4 * ones(size(insidecity_test,1),1)];
 
-% % Parameter Selection
-% [bestC,bestSigma,bestcv] = parameterSelection(X_train,y_train,10,0);
-% 
-% 
-% param = ['-s ', num2str(0), ' -t ', num2str(0) , ' -c ', num2str(bestC),' -q'];
-% 
-% model = svmtrain(y_train,X_train,param);
-% [pred,a,decv] = svmpredict(y_test,X_test,model);
-% acc = sum(y_test == pred)/length(y_test);
 
 % Parameter Selection
 % Using the RBF Kernel
