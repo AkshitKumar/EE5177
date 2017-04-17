@@ -33,20 +33,8 @@ insidecity_test = insidecity_test.insidecity_test;
 X_test = [coast_test ; forest_test ; mountain_test ; insidecity_test];
 y_test = [zeros(size(coast_test,1),1) ;  ones(size(forest_test,1),1) ; 2 * ones(size(mountain_test,1),1) ; 3 * ones(size(insidecity_test,1),1)];
 
-cverr = [];
-testerr = [];
-
-k = 5:5:100;
-for i = 1:length(k)
-    model = glmnet(X_train,y_train,'multinomial');
-    CVerr = cvglmnet(X_train,y_train,'multinomial',[],[],k(i));
-    cverr = [cverr ; min(CVerr.cvm)];
-    yHat = glmnetPredict(model,X_test,CVerr.lambda_min,'class');
-    accuracy = (80 - nnz(y_test - yHat))/80;
-    testerr = [testerr ; 1 - accuracy];
-end
-
-figure(1);
-plot(k,cverr);
-figure(2);
-plot(k,testerr);
+k = 10;
+model = glmnet(X_train,y_train,'multinomial');
+CVerr = cvglmnet(X_train,y_train,'multinomial',[],[],k);
+yHat = glmnetPredict(model,X_test,CVerr.lambda_min,'class');
+accuracy = (80 - nnz(y_test - yHat))/80;

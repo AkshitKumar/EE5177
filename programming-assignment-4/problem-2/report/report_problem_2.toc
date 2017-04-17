@@ -1,0 +1,16 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}Goal}{1}
+\contentsline {subsection}{\numberline {1.2}Approach}{1}
+\contentsline {section}{\numberline {2}Linearly Separable Data}{1}
+\contentsline {subsection}{\numberline {2.1}Bias-Variance Tradeoff}{1}
+\contentsline {subsection}{\numberline {2.2}Contour Plots for different $\lambda $ values}{2}
+\contentsline {subsection}{\numberline {2.3}Required Iteration Data for $\lambda $ = 1}{4}
+\contentsline {subsection}{\numberline {2.4}Required Iteration Data for $\lambda $ = 10}{4}
+\contentsline {section}{\numberline {3}Non Linearly Separable Data : Use of Slack Variables}{4}
+\contentsline {subsection}{\numberline {3.1}Goal}{4}
+\contentsline {subsection}{\numberline {3.2}Approach}{4}
+\contentsline {subsection}{\numberline {3.3}Required Iteration Data for $\lambda $ = 10 and C = 1}{4}
+\contentsline {subsection}{\numberline {3.4}Required Iteration Data for $\lambda $ = 10 and C = 100000}{4}
+\contentsline {subsection}{\numberline {3.5}Varying C}{4}
+\contentsline {subsection}{\numberline {3.6}Plots for various values of C}{4}

@@ -30,7 +30,7 @@ w = y_training;
 
 % Finding the optimal point
 options = optimset('GradObj','on','Hessian','on','MaxIter',400);
-phi = fminunc(@(phi) cost(phi,X,w),initial_phi, options); 
+[phi,fval,exitflag,output,grad,hessian] = fminunc(@(phi) cost(phi,X,w),initial_phi, options); 
 
 % Finding the confusion matrix 
 [tp,tn,fp,fn] = findConfusionMatrix(phi,test_data_class_0,test_data_class_1);
@@ -47,5 +47,8 @@ decision_boundary_line = decision_boundary * ones(101,1);
 vertical_line = 0:0.01:1;
 
 % Plotting the input data
-plot(class_0,0,'rx',class_1,0.05,'bx',x,y,decision_boundary,0,'o',decision_boundary_line,vertical_line,'--');
+plot(class_0,zeros(size(class_0)),'rx',class_1,0.05*ones(size(class_0)),'bx',x,y,decision_boundary,0.1,'o',decision_boundary_line,vertical_line,'--');
+% scatter(class_0,zeros(size(class_0)));
+% scatter(class_0,
+legend('Class 0','Class 1','Sigmoid Function','Decision Boundary(Point)','Decision Boundary Line');
  

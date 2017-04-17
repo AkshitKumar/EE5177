@@ -1,0 +1,13 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}Goal}{1}
+\contentsline {subsection}{\numberline {1.2}Approach}{1}
+\contentsline {section}{\numberline {2}Data Generation}{1}
+\contentsline {section}{\numberline {3}Training Phase}{2}
+\contentsline {subsection}{\numberline {3.1}Goal}{2}
+\contentsline {subsection}{\numberline {3.2}Approach}{2}
+\contentsline {subsection}{\numberline {3.3}Results}{2}
+\contentsline {section}{\numberline {4}Issue with Linear Separability of Data}{2}
+\contentsline {section}{\numberline {5}Experiment Results}{2}
+\contentsline {subsection}{\numberline {5.1}Confusion Matrix}{2}
+\contentsline {subsection}{\numberline {5.2}Required Plots}{3}
