@@ -49,16 +49,16 @@ y_test = [ones(size(coast_test,1),1) ;  2 * ones(size(forest_test,1),1) ; 3 * on
 param = ['-s ', num2str(0) , ' -t ', num2str(2), ' -c ', num2str(rbfC) , ' -g ', num2str(rbfGamma) , ' -q'];
 rbf_model = svmtrain(y_train, X_train, param);
 [rbf_pred , a , decv] = svmpredict(y_test, X_test, rbf_model);
-rbf_acc = sum(y_test == pred)/length(y_test);
+rbf_acc = sum(y_test == rbf_pred)/length(y_test);
 
-%{
+
 % Using the Linear Kernel
 [linearC, linearGamma, linearCV] = parameterSelection(X_train,y_train,10,0);
-param = ['-s ', num2str(0) , ' -t ', num2str(2), ' -c ', num2str(rbfC) , ' -q'];
+param = ['-s ', num2str(0) , ' -t ', num2str(0), ' -c ', num2str(linearC) , ' -q'];
 linear_model = svmtrain(y_train,X_train,param);
 [linear_pred, a , decv] = svmpredict(y_test,X_test,linear_model);
-linear_acc = sum(y_test == pred) / length(y_test);
-%}
+linear_acc = sum(y_test == linear_pred) / length(y_test);
+
 
 
 
