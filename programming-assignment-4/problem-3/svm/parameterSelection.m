@@ -6,7 +6,7 @@ function [bestC,bestSigma,bestcv] = parameterSelection(X_train,y_train,numFolds,
     if kernel_type == 0
         C = logspace(-10,1,10);
         for c = 1:length(C)
-            param = ['-s ', num2str(0), ' -t ', num2str(kernel_type) , ' -c ', num2str(C(c)),' -v ', num2str(numFolds)];
+            param = ['-s ', num2str(0), ' -t ', num2str(kernel_type) , ' -c ', num2str(C(c)),' -v ', num2str(numFolds) , ' -q'];
             cv_acc = svmtrain(y_train,X_train,param);
             if(cv_acc >= bestcv)
                 bestcv = cv_acc;
@@ -22,7 +22,7 @@ function [bestC,bestSigma,bestcv] = parameterSelection(X_train,y_train,numFolds,
         bestcv = 0;
         for c = 1:length(C)
             for s = 1:length(Sigma)
-                param = ['-s ', num2str(0), ' -t ', num2str(kernel_type) , ' -c ', num2str(C(c)),' -g ', num2str(Sigma(s)), ' -v ', num2str(numFolds)];
+                param = ['-s ', num2str(0), ' -t ', num2str(kernel_type) , ' -c ', num2str(C(c)),' -g ', num2str(Sigma(s)), ' -v ', num2str(numFolds) , ' -q'];
                 cv_acc = svmtrain(y_train,X_train,param);
                 if(cv_acc >= bestcv)
                     bestcv = cv_acc;
